@@ -1,0 +1,29 @@
+
+.error{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+
+}
+
+p{
+    font-style: italic;
+}
+
+.to-home{
+    color: #000;
+    margin-top: 16px;
+    padding: 4px 16px;
+    border-radius: 4px;
+    background-color: rgba(255,255,255,0.6);
+    transition: background-color, transform 0.5s;
+}
+
+.to-home:hover{
+    background-color: #fff;
+    transform: scale(1.05);
+}

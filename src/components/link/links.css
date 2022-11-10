@@ -1,0 +1,29 @@
+
+.link-area{
+background-color: #fff;
+width: 100%;
+margin-bottom: 14px;
+padding: 6px 0;
+user-select: none;
+border-radius: 6px;
+transition: transform 0.4s ease-in-out;
+
+}
+.link-area:hover{
+    transform: scale(1.04);
+}
+
+.link-text{
+    font-style: normal;
+    color: #000;
+    font-size: 16px;
+    line-height:150%;
+
+}
+
+@media (max-width: 550px){
+    .link-text{
+        font-size: 14px;
+
+    }
+    }
