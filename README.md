@@ -37,14 +37,12 @@ KabehLink trata-se de uma aplicação Web para gerenciameno e compartilhamento d
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK]([https://www.figma.com/file/99YhS2ZJOXe10pnqMIkjOc/TEMPSTART?node-id=1%3A2
-](https://www.figma.com/file/SZKvZoLGZ8udFyHLFJLFDK/DevLink---Semana-React-JS-(Copy)?node-id=0%3A1&t=fXZk8XUO1oA1UzvL-1)). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/SZKvZoLGZ8udFyHLFJLFDK/DevLink---Semana-React-JS-(Copy)?node-id=0%3A1&t=fXZk8XUO1oA1UzvL-1). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## Deploy
 
 Clique abaixo para acessar a aplicação online!
-[https://www.figma.com/file/99YhS2ZJOXe10pnqMIkjOc/TEMPSTART?node-id=1%3A2
-](https://www.figma.com/file/SZKvZoLGZ8udFyHLFJLFDK/DevLink---Semana-React-JS-(Copy)?node-id=0%3A1&t=fXZk8XUO1oA1UzvL-1)
+[
 
 [Clique aqui para acessar!](https://kabehlinks.netlify.app/)
 
