@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom"
 import './links.css'
-export function Links({textcolor, bg, text,link, children}){
+export function Links({key,textcolor, bg, text,link, children}){
     return (
         <section
+        key={key}
          className="link-area"
          style={{backgroundColor: bg, color: textcolor}}
 
