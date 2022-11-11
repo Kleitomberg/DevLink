@@ -1,6 +1,6 @@
 .home-container{
     display: flex;
-    flex-direction: column; //um abixo do outro
+    flex-direction: column; /*um abixo do outro*/
     width: 100%;
     padding: 14px 0;
     align-items: center;
@@ -45,7 +45,7 @@ footer.icones{
 
 }
 
-//Responsividade
+/*Responsividade*/
 @media (max-width: 550px){
 .home-container h1{
     font-size: 26px;
