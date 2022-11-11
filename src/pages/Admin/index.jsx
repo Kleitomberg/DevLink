@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './admin.css'
 import {Logo} from '../../components/Logo'
 import {Input} from '../../components/Input'
@@ -21,6 +21,28 @@ export default function Admin(){
     const [text, setText] = useState('');
     const [bg, setBg] = useState('');
     const [color, setColor] = useState('');
+    const [links, setLinks] = useState([]);
+
+    useEffect(() => {
+        const mylinks = collection(db, 'links'); //pega os links do banco de dados
+        const q = query(mylinks, orderBy('created', 'desc')); //ordena os links por data de criação
+        const unsubscribe = onSnapshot(q, (snapshot) => { //escuta as mudanças no banco de dados
+            let list = [];
+
+            snapshot.forEach((doc) => {
+                list.push({
+                    id: doc.id,
+                    titulo: doc.data().titulo,
+                    url: doc.data().url,
+                    bg: doc.data().bg,
+                    color: doc.data().color,
+                })
+            })
+
+            setLinks(list)
+        })
+
+    }, [])
 
     function handleAddLink(e){
         e.preventDefault();
@@ -100,15 +122,19 @@ export default function Admin(){
 
         <h2 className='my-links'>Meus Links</h2>
 
-        <article
-        className='container-link animate-pop'
+       {links.map((item,index) => {
+        return(
+            <article
+            key={index}
+            className='container-link animate-pop'>
+                <Links bg={item.bg} color={item.color}text={item.titulo}>
+               <button title='Excluir Link' className='btn-trash'><FiTrash2 size={18}  color="#fff"/></button>
+                </Links>
+            </article>
+        )
+       })}
 
 
-        >
-            <Links bg='#fff'  color="#f00" text="texto do link">
-           <button title='Excluir Link' className='btn-trash'><FiTrash2 size={18}  color="#fff"/></button>
-            </Links>
-        </article>
 
         </div>
     )
