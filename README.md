@@ -1,5 +1,5 @@
 <p align="center" >
-  <img style='width:40vw; heig:auto;' alt="License" src="./src/assets/logo.png">
+  <img style='width:40vw; heig:auto;' alt="License" src="https://github.com/Kleitomberg/DevLink/blob/main/src/assets/Logo.png">
 </p>
 
 <p align="center">
