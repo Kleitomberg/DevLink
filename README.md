@@ -28,7 +28,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Javascript](https://www.javascript.com/)
 - [Firebase](https://firebase.google.com/)
 - [Tostify](https://fkhadra.github.io/react-toastify/introduction)
-
+- [Vite](https://vitejs.dev/guide/)
+- [Netlify](https://www.netlify.com/)
 
 
 ## 💻 Projeto
