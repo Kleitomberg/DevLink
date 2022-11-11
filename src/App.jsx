@@ -6,6 +6,7 @@ import Admin from './pages/Admin';
 import Error404 from './pages/Error';
 import Private from './routes/private';
 import Loged from './routes/loged';
+import { SocialMedia } from './pages/SocialMedia';
 
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
     {
         path: '/admin',
         element:<Private> <Admin/> </Private>
+    },
+    {
+        path: '/admin/social',
+        element:<Private> <SocialMedia/> </Private>
     },
     {
         path: '*',
