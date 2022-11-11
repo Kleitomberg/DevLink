@@ -1,7 +1,7 @@
 import './home.css'
 import { Links } from '../../components/link'
 import { Social } from '../../components/social-icons'
-import { FaFacebook, FaInstagram, FaYoutube, FaGithub,FaLinkedin  } from 'react-icons/fa'
+import { FaInstagram, FaYoutube,FaLinkedin  } from 'react-icons/fa'
 import { db } from '../../services/firebase'
 import { useEffect,useState } from 'react'
 import { collection,query,orderBy, getDocs, getDoc, doc } from 'firebase/firestore'
