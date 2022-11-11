@@ -3,19 +3,27 @@
 background-color: #fff;
 width: 100%;
 margin-bottom: 14px;
-padding: 6px 0;
+padding: 8px 8px;
 user-select: none;
 border-radius: 6px;
 transition: transform 0.4s ease-in-out;
+display: flex;
+flex-direction: row;
 
 }
 .link-area:hover{
     transform: scale(1.04);
 }
 
+.link-area a{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
 .link-text{
     font-style: normal;
-    color: #000;
+
     font-size: 16px;
     line-height:150%;
 

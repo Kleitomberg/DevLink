@@ -88,6 +88,7 @@ export default function Login(){
                 progress: undefined,
                 theme: "dark",
                 });
+                toast.success('Bem vindo!', {});
 
         })
         .catch((error) => {
