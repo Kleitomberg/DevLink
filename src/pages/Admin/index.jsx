@@ -23,6 +23,16 @@ export default function Admin(){
     const [color, setColor] = useState('');
     const [links, setLinks] = useState([]);
 
+   async function linkDelete(id){
+        await deleteDoc(doc(db, 'links', id))
+        .then(() => {
+        toast.success('Link deletado com sucesso!')
+        })
+        .catch((error) => {
+        toast.error('Erro ao deletar link')
+        })
+    }
+
     useEffect(() => {
         const mylinks = collection(db, 'links'); //pega os links do banco de dados
         const q = query(mylinks, orderBy('created', 'desc')); //ordena os links por data de criação
@@ -128,7 +138,7 @@ export default function Admin(){
             key={index}
             className='container-link animate-pop'>
                 <Links bg={item.bg} color={item.color}text={item.titulo}>
-               <button title='Excluir Link' className='btn-trash'><FiTrash2 size={18}  color="#fff"/></button>
+               <button onClick={(e) => linkDelete(item.id)} title='Excluir Link' className='btn-trash'><FiTrash2 size={18}  color="#fff"/></button>
                 </Links>
             </article>
         )
